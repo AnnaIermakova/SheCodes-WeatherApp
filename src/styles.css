@@ -62,6 +62,12 @@ link {
 .degrees {
   font-size: 12;
 }
+.footer {
+  font-size: smaller;
+}
+.footer a {
+  margin-left: 40px;
+}
 .main-container {
   background-color: rgb(245, 245, 245);
   border: 2px solid #5a6275;
