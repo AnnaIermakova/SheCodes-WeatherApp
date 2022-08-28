@@ -1,0 +1,97 @@
+body {
+  background-color: #ffffff;
+  color: #5a6275;
+  font-family: "Roboto", sans-serif;
+  line-height: 40px;
+}
+
+form {
+  margin: auto;
+  margin-top: 64px;
+  margin-left: 4px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: rgb(25, 25, 25);
+}
+h1 {
+  line-height: 64px;
+  display: inline;
+}
+
+input {
+  border: 0;
+  font-size: 16px;
+  padding: 4px 10px;
+}
+
+link {
+  text-decoration: none;
+}
+
+.additional-information {
+  font-size: 13px;
+}
+.col-2 {
+  text-align: center;
+}
+.date-and-time {
+  display: block;
+  font-size: 14px;
+  list-style-type: none;
+  margin-top: 8px;
+  text-align: right;
+}
+.days-of-the-week .col-2 {
+  padding: 4px 0 4px 0;
+}
+.days-of-the-week .col-2:hover {
+  background-color: #fdfbc8;
+  border-radius: 16px;
+  border: 1px solid #5a6275;
+  cursor: pointer;
+}
+
+.days-of-the-week b {
+  color: rgb(25, 25, 25);
+  transition: all ease-in-out 150ms;
+}
+
+.degrees {
+  font-size: 12;
+}
+.main-container {
+  background-color: rgb(245, 245, 245);
+  border: 2px solid #5a6275;
+  border-radius: 16px;
+  display: block;
+  margin: 40px 0 40px 40px;
+  padding: 0 20px 40px 20px;
+  width: 760px;
+}
+.search {
+  border-radius: 16px;
+  width: 75%;
+}
+
+.search:hover {
+  cursor: text;
+}
+.submit {
+  width: 80px;
+  border-radius: 16px;
+  color: #ffffff;
+}
+.units {
+  position: relative;
+  margin-left: 16px;
+  text-decoration: none;
+  top: -14px;
+  left: -8px;
+  font-size: 20px;
+}
+#weather-description {
+  text-transform: capitalize;
+}

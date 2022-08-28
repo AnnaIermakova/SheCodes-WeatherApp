@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container main-container">
+      <header>
+        <form class="search-form" id="search-form">
+        <div class="row">
+          <div class="col-4">
+            <input
+              type="search"
+              placeholder="Search for location.."
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-2">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-dark shadow-sm"
+              id="city-input"
+            />
+          </div>
+          <div class="col-2">
+            <input
+              type="submit"
+              value="Current"
+              class="form-control btn btn-secondary shadow-sm"
+              id="current-location"
+            />
+          </div>
+</form>
+<div class="col-4">
+            <ul class="date-and-time">
+              <li>
+                <span id="week-day"></span>, <span id="date"></span>
+                <span id="month"></span> <span id="year"></span>
+              </li>
+              <li><span id="hour"></span>:<span id="minutes"></span></li>
+            </ul>
+</div>         
+      </header>
+      <main>
+        <h1>
+          <span id="city"></span> 
+           <span id="temperature"></span><span class="units">°C</span> </h1>
+
+        <div class="row additional-information">
+          <div class="col-4"></div>
+          <div class="col-2" >Feels like <span id="feels-like"></span> °C</div>
+          <div class="col-2" >Humidity <span id="humidity"></span>%</div>
+          <div class="col-2" >Wind <span id="wind"></span> m/s</div>
+          <div class="col-2" id="weather-description"></div>
+        </div>
+        <div class="row days-of-the-week">
+          <div class="col-2">
+            <h2>Tue</h2>
+            ☀️ <br />
+            <b>32°C</b> 18°C
+          </div>
+          <div class="col-2">
+            <h2>Wed</h2>
+            🌦️ <br />
+            <b>29°C</b> 17°C
+          </div>
+          <div class="col-2">
+            <h2>Thu</h2>
+            ☁️ <br />
+            <b>32°C</b> 18°C
+          </div>
+          <div class="col-2">
+            <h2>Fri</h2>
+            ☀️<br />
+            <b>32°C</b> 18°C
+          </div>
+          <div class="col-2">
+            <h2>Sat</h2>
+            🌤️ <br />
+            <b>33°C</b> 21°C
+          </div>
+          <div class="col-2">
+            <h2>Sun</h2>
+            ☀️ <br />
+            <b>33°C</b> 22°C
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
