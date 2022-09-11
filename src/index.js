@@ -44,6 +44,7 @@ let currentMonth = document.querySelector("#month");
 let currentYear = document.querySelector("#year");
 let currentHour = document.querySelector("#hour");
 let currentMinutes = document.querySelector("#minutes");
+let iconElement = document.querySelector("#icon");
 
 weekDay.innerHTML = `${day}`;
 currentDate.innerHTML = `${date}`;
@@ -51,7 +52,6 @@ currentMonth.innerHTML = `${month}`;
 currentYear.innerHTML = `${year}`;
 currentHour.innerHTML = `${hours}`;
 currentMinutes.innerHTML = `${minutes}`;
-//2 change city when searching //Week 5
 
 // Show temperature in the city which is being searched
 
@@ -82,6 +82,11 @@ function displayWeatherConditions(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let searchForm = document.querySelector("#search-form");

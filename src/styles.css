@@ -19,6 +19,7 @@ h2 {
 h1 {
   line-height: 64px;
   display: inline;
+  position: relative;
 }
 
 input {
@@ -43,6 +44,7 @@ link {
   list-style-type: none;
   margin-top: 8px;
   text-align: right;
+  padding: 0;
 }
 .days-of-the-week .col-2 {
   padding: 4px 0 4px 0;
@@ -69,7 +71,7 @@ link {
   margin-left: 40px;
 }
 .main-container {
-  background-color: rgb(245, 245, 245);
+  background-color: rgba(128, 128, 128, 0.204);
   border: 2px solid #5a6275;
   border-radius: 16px;
   display: block;
@@ -94,9 +96,10 @@ link {
   position: relative;
   margin-left: 16px;
   text-decoration: none;
-  top: -14px;
+  top: -18px;
   left: -8px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 400;
 }
 #weather-description {
   text-transform: capitalize;
