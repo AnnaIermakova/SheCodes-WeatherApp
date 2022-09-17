@@ -94,6 +94,26 @@ function displayWeatherConditions(response) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+            <h2 class="weather-forecast-date">${day}</h2>
+           <img
+           src= "http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42"/> <br />
+            <b>32°C</b> 18°C
+          </div>`;
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+  });
+}
+
 function showPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
@@ -142,3 +162,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 //
 
 search("New York");
+displayForecast();
