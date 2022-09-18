@@ -117,10 +117,12 @@ link {
   text-transform: capitalize;
 }
 
-.weather-forecast-temperature-min {
-  opacity: 0.8;
+.weather-forecast-temperature-max {
+  font-size: 13px;
+  font-weight: 600;
 }
 
-.weather-forecast-temperatures {
+.weather-forecast-temperature-min {
   font-size: 13px;
+  opacity: 0.8;
 }
